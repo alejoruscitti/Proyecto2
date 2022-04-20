@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* css index*/
+
+/*fondo del index*/
+body{
+    background-image: linear-gradient( to left, #F9DC88 ,#D1BD8F );
+}
+/* titulo,menu y estilo del menu*/
+div p a{
+    
+    text-transform: uppercase;
+    color: #148F77 ;
+}
+
+header{
+    background-color: #D1BD8F ;
+    position: sticky;
+    top: 0;
+}
+
+/*transiciones menu*/
+nav ul li a:hover{
+    background-color:#B8994E;
+    transform: scale(1.2);
+}
+
+.Velas1:hover{
+    transform: scale(1.1);
+}
+
+.menu{
+    color: black;
+}
+
+.container {  display: grid;
+    grid-template-columns: 38% 23%;
+    grid-template-rows: 45% 40% 40%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+     grid-template-areas:
+      "Velas Velas2"
+      "aca aca2"
+      "parrafo parrafo2";
+}
+  
+.aca { grid-area: aca; 
+    text-align: center;
+    margin: 10px;
+}
+  
+.aca2 { grid-area: aca2; 
+    text-align: center;
+    margin: 10px;
+}
+  
+.parrafo { grid-area: parrafo; 
+    text-align: center;
+    margin: 80px;
+}  
+.parrafo2 { grid-area: parrafo2;
+    text-align: center; 
+}
+
+.Velas2 { grid-area: Velas2; }
+  
+.Velas { grid-area: Velas; }
+  
+li{
+    font-size:  40px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+}
+
+header nav .menu li a{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+/*subtitlo*/
+h1{
+    text-align: center;
+    margin: 80px;
+    padding: 80px;
+}
+/*imagenes*/
+section div{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+    margin: 200px;
+}
+
+
+.texto{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    margin: 150px;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+
+p{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* css velas*/
+
+/* body de velas*/
+.bodyVelas{
+    position: relative;
+    padding-bottom: 3em ;
+    min-height: 100vh;
+    background-image: linear-gradient( to left, #F9DC88 ,#D1BD8F );
+}
+.menuVelas{
+    z-index:1;
+}
+/* estilos de card*/
+
+.estilos-card{
+    margin: 2rem;
+    padding: 1px;
+    background-color:brown;
+}
+/*estilos parrafo*/
+.estilos-p{
+    font-size: 1.8rem
+}
+
+.btn-estilos{
+    background-color:#D1BD8F;
+    box-shadow: 2px 3px black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.btn-estilos:hover{
+    transform: scale(1.1);
+
+}
+
+.headerVelas{
+    background-color: #D1BD8F ;
+    position: sticky;
+    top: 0;
+}
+li{
+    font-size:  40px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+/*imagenes*/
+.imagenesVelas{
+    margin: 100px;
+    padding: 100px;
+    
+}
+
+
+/* footer de velas*/
+.footerVelas{
+    margin: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0; 
+    width: 50%;
+}
+
+/* css productos*/
+
+/*body de productos*/
+.bodyProductos{
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+/*main*/
+.productosMain{     font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 5vh;
+}
+
+/* los parrafos del main*/
+.pMain{
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: start;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.pMain2{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+/*las imagenes del main/producto*/
+.esencias1{
+    margin: 100px;
+    padding: 100px;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.esencias2{
+    margin: 100px;
+    padding: 100px;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*titulo difusor*/
+.tituloDifusor{
+    text-transform: uppercase;
+    font-size: 5vh;
+    text-align: center;
+    margin: 5rem;
+}
+/*fotos de los difusores*/
+.difusor{
+    margin: 5rem;
+    padding: 5rem;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.difusor2{
+    margin: 5rem;
+    padding: 5rem;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*footer de productos*/
+.footerProductos{
+    text-align: center;
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    grid-area: footerProductos;
+}
+
+.containerProductos {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "productosMain ProductosMain productosMain"
+      "pMain pMain2 pMain2"
+      "esencias1 esencias2 esencias2"
+      "tituloDifusor tituloDifusor tituloDifusor"
+      "parrafoDifusor parrafoDifusor parrafoDifusor"
+      "parrafoDifuros2 parrafoDifusor2 parrafoDifusor2"
+      "difusor difusor2 difusor2"
+      "footerProductos footerProductos footerProductos"
+}
+  
+.productosMain { grid-area: productosMain; }
+  
+.pMain { grid-area: pMain; }
+  
+.pMain2 { grid-area: pMain2; }
+  
+.esencias1 { grid-area: esencias1; }
+  
+.esencias2 { grid-area: esencias2; }
+  
+.tituloDifusor { grid-area: tituloDifusor; }
+  
+.parrafoDifusor { grid-area: parrafoDifusor; }
+  
+.parrafoDifusor2 { grid-area: parrafoDifusor2; }
+  
+.difusor { grid-area: difusor; }
+  
+.difusor2 { grid-area: difusor2; }
+/*css sobre nosotros*/
+
+/* todo los parrafos del main*/
+
+.containerSobreNosotros{
+    text-transform: uppercase;
+    font-size: 3vh;
+   
+}
+.sobre{
+    text-align: center;
+    font-size: 6vh;
+}
+
+.sobre1{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+.sobre2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+.sobre3{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: dashed;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+.sobre4{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif ;
+    font-size: larger;
+}
+
+.sobre5{
+    margin: 100;
+    padding: 100;
+    text-align: center;
+}
+
+.footerSobreNosotros{
+    margin: 3rem;
+    padding: 3rem;
+
+}
+/*contactanos*/
+
+/* body  de contactanos*/
+.bodyContactanos{
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+/*parrafo del main*/
+.contacto1{
+    text-align: start;
+    font-family: 'Roboto', sans-serif ;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*formulario*/
+.formulario{
+    border: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif ;
+    padding: 10px;
+    margin: 10px;
+}
+/*footer de contactanos*/
+.footercontactanos{
+    text-align: center;
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+}
+
+@media only screen and (max-width:480px){
+    header{
+        text-align: center;
+    }
+    
+    h1{
+        text-align: center;
+    }
+
+    .container{
+        display: block;
+    }
+
+    /*Sector velas*/
+
+    .headerVelas{
+        background-color: #D1BD8F ;
+        position: sticky;
+        top: 0;
+        text-align: center;
+    }
+
+    .containervelas{
+        display: inline-block;
+    }
+    /*Sector Productos*/
+    .headerProductos{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .containerProductos {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "productosMain"
+          "pMain"
+          "pMain2"
+          "esencias1"
+          "esencias2"
+          "tituloDifusor"
+          "parrafoDifusor"
+          "parrafoDifuros2"
+          "difusor"
+          "difusor2"
+          "footerProductos";
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+      
+    .productosMain { grid-area: productosMain; }
+      
+    .pMain { grid-area: pMain;
+       display: inline-block;
+       justify-content: center;
+    }
+      
+    .pMain2 { grid-area: pMain2; }
+      
+    .esencias1 { grid-area: esencias1; }
+      
+    .esencias2 { grid-area: esencias2; }
+      
+    .tituloDifusor { grid-area: tituloDifusor;   
+    }
+      
+    .parrafoDifusor { grid-area: parrafoDifusor; }
+      
+    .parrafoDifusor2 { grid-area: parrafoDifusor2; }
+      
+    .difusor { grid-area: difusor; }
+      
+    .difusor2 { grid-area: difusor2; }
+   
+    
+
+
+    
+
+
+    /*Sector Sobre Nosotros*/
+    .sobre{
+        text-align: center;
+        padding: 10px;
+    }
+    /*Sector Contactos*/
+   .mainContactos{
+       font-size: 1.5vh;
+   }
+   
+}
+    
+
+
